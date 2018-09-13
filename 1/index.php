@@ -1,11 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: olegrasskazov
- * Date: 2018-09-07
- * Time: 18:51
- */
+$a = 10;
+$b = 250;
 
-$name = "GeekBrains user wooooo!!!!";
-echo "Hello, $name!";
+echo $a . " & " . $b . '<br>';
+$a += $b;
+$b = $a - $b;
+$a -= $b;
+echo $a . " & " . $b . '<br>';
 ?>
