@@ -1,5 +1,5 @@
 <?php
-
+header("Content-type: text/html; charset=utf-8");
 /*
 Написать функцию, которая вычисляет текущее время и возвращает его в формате с правильными склонениями, например:
 22 часа 15 минут
@@ -13,9 +13,11 @@ $hWord = getWord($h, 'h');
 $mWord = getWord($m);
 
 function getWord($t , $val = '') {
-    if ($t % 10 === 1 && !($t > 10 && $t < 20)) {
+	$last = $t % 10;
+
+    if ($last === 1 && !($t > 10 && $t < 20)) {
         return ($val) ? 'час' : 'минута';
-    } else if (($t % 10 > 1 && $t % 10 < 5) && !($t > 10 && $t < 20)) {
+    } else if (($last > 1 && $last < 5) && !($t > 10 && $t < 20)) {
         return ($val) ? 'часа' : 'минуты';
     } else {
         return ($val) ? 'часов' : 'минут';
