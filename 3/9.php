@@ -39,6 +39,8 @@ $lib = [
 /**
  * @param String $str string that needs to be transliterated
  * @param String [] $lib array of transliteration library
+ * @param String [] $pattern what to replace
+ * @param String [] $replace to what replace
  * @return String transliterated string
  */
 function transAndReplace($str, $lib, $pattern, $replace) {
