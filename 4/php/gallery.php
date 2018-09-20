@@ -1,6 +1,8 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
 
+include_once PHP_DIR . '/funcImgResize.php';
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	if(isset($_FILES['failo'])) {
 		if(!file_exists(MAX_DIR)){

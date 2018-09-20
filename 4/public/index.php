@@ -2,7 +2,6 @@
 header("Content-type: text/html; charset=utf-8");
 include __DIR__ . '/../php/config.php';
 include_once PHP_DIR . '/gallery.php';
-include_once PHP_DIR . '/funcImgResize.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
