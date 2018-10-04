@@ -1,7 +1,7 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
 
-include_once PHP_DIR . '/funcImgResize.php';
+include_once PHP_DIR . '/funcImgResize.engine';
 
 /**
  * Function returns TRUE if folder (presented by $files array) contains file $name
@@ -54,7 +54,7 @@ function galeryRender($gallery) {
 		$src = $value["min_src"];
 		$name = $value["name"];
 		$views = $value["views"];
-		echo "<a href=\"photo.php?id={$id}\" target=\"_blank\"><img src=\"{$src}\" alt=\"{$name}\"></a>";
+		echo "<a href=\"photo.engine?id={$id}\" target=\"_blank\"><img src=\"{$src}\" alt=\"{$name}\"></a>";
 		echo "<p>Views: {$views}</p>";
 		echo "</div>";
 	}
