@@ -14,7 +14,7 @@ gulp.task('default', function() {
         });
     });
 
-    gulp.watch('.1/**/*.php').on('change', function () {
+    gulp.watch('.1/**/*.engine').on('change', function () {
         browserSync.reload({stream: true});
     });
 });
