@@ -30,3 +30,8 @@ function addToCart($id, $qty) {
 function deleteFromCart($id) {
 	unset($_SESSION['cart'][$id]);
 }
+
+function cleanCart(){
+	unset($_SESSION['cart']);
+	redirect('cart.php');
+}
